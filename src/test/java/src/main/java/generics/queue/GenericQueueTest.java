@@ -24,8 +24,8 @@ public class GenericQueueTest {
 	
 	@Test
 	public void testPersonQueue() throws ParseException {	
-		personQueue.addToQueue(new Person("Paul", "Forde", format.parse("25/11/1975")));
-		personQueue.addToQueue(new Person("Eddie", "Mackey",format.parse("16/01/1984")));
+		personQueue.addToQueue(new Person("Paul", "Forde", format.parse("25/11/1975"),20));
+		personQueue.addToQueue(new Person("Eddie", "Mackey",format.parse("16/01/1984"),30));
 		
 		assertNotNull(personQueue);	
 		assertEquals(2, personQueue.getLength());
